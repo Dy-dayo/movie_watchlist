@@ -19,7 +19,7 @@ if (form) {
 function getMovieId() {
     movieIDs = []
     const searchValue = search.value
-    fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=31a5e553`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=31a5e553`)
         .then(res => res.json())
         .then(data => {
             for (let movie of data.Search) {
